@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: url(../images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-color: hsl(0deg, 100%, 74%);
+}
+.main .container {
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+.main .container .box {
+  width: 48%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main .container .box h1 {
+  font-weight: 700;
+  font-size: 5.2rem;
+  color: hsl(255deg, 100%, 100%);
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+.main .container .box p {
+  font-size: 1.6rem;
+  color: hsl(255deg, 100%, 100%);
+  line-height: 1.6;
+  font-weight: 400;
+  word-spacing: 0.2rem;
+}
+.main .container .box .para {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.5rem;
+  background-color: hsl(248deg, 32%, 49%);
+  box-shadow: 0 0.5rem 1rem hsla(249deg, 10%, 26%, 0.85);
+  border-radius: 0.8rem;
+}
+.main .container .box .para span {
+  color: hsl(246deg, 25%, 77%);
+  font-weight: 500;
+}
+.main .container .box form {
+  background-color: hsl(255deg, 100%, 100%);
+  padding: 3rem 4rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.8rem 1rem hsla(249deg, 10%, 26%, 0.85);
+}
+.main .container .box form div {
+  position: relative;
+}
+.main .container .box form div input {
+  width: 100%;
+  height: 5.5rem;
+  margin-bottom: 1rem;
+  padding: 1.4rem 2.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1px;
+  vertical-align: center;
+  color: hsl(249deg, 10%, 26%);
+}
+.main .container .box form div input:focus {
+  outline: 0.1rem solid hsl(248deg, 32%, 49%);
+}
+.main .container .box form div span {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  color: hsl(0deg, 100%, 74%);
+  font-size: 1rem;
+  text-align: right;
+}
+.main .container .box form div img {
+  display: none;
+  position: absolute;
+  right: 2.5rem;
+  top: 1.1rem;
+}
+.main .container .box form span {
+  display: block;
+}
+.main .container .box form button {
+  background-color: hsl(154deg, 59%, 51%);
+  color: hsl(255deg, 100%, 100%);
+  width: 100%;
+  padding: 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  word-spacing: 0.2rem;
+  box-shadow: 0 0.4rem 0.2rem hsl(246deg, 25%, 77%);
+}
+.main .container .box form .t-c {
+  font-weight: 600;
+  color: hsl(246deg, 25%, 77%);
+  font-size: 1.1rem;
+  text-align: center;
+  display: block;
+  margin-top: 2rem;
+}
+.main .container .box form .t-c a {
+  color: hsl(0deg, 100%, 74%);
+  text-decoration: none;
+  font-weight: 700;
+}
+.main .container .ext {
+  padding-right: 2.5rem;
+}
+
+@media (max-width: 1050px) {
+  .container {
+    width: 90% !important;
+  }
+}
+@media (max-width: 876px) {
+  html {
+    font-size: 56.25%;
+  }
+  .container {
+    width: 95% !important;
+  }
+}
+@media (max-width: 665px) {
+  html {
+    font-size: 50%;
+  }
+  .container .box {
+    width: 50% !important;
+  }
+  .container .box h1 {
+    font-size: 3rem !important;
+  }
+  .container .box p {
+    font-size: 1.45rem !important;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 80% !important;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container .box {
+    width: 100% !important;
+  }
+  .container .box h1 {
+    font-size: 3.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .container .box p {
+    font-size: 1.9rem !important;
+  }
+  .container .box .para {
+    padding: 1.2rem 5.5rem !important;
+  }
+  .container .box form {
+    padding: 2.8rem !important;
+  }
+  .container .box form button {
+    font-size: 1.8rem !important;
+  }
+  .container .box form .t-c {
+    font-size: 1.2rem !important;
+  }
+  .container .box form .t-c a {
+    line-height: 1.8;
+  }
+  .container .ext {
+    padding-right: 0 !important;
+    margin-bottom: 4.2rem;
+  }
+}
+footer .attribution {
+  font-size: 1.4rem;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(255deg, 100%, 100%);
+  font-weight: 500;
+}/*# sourceMappingURL=styles.css.map */

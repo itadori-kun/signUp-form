@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@import "./reset";
+@import "./variables";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: url(../images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-color: $color-Red;
+
+  .container {
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.4rem;
+
+    .box {
+      width: 48%;
+      height: fit-content;
+      h1 {
+        font-weight: $fw-bold;
+        font-size: 5.2rem;
+        color: $color-white;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: $font-size1;
+        color: $color-white;
+        line-height: 1.6;
+        font-weight: $fw-light;
+        word-spacing: .2rem;
+      }
+      .para {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: $font-size1;
+        font-weight: $fw-semibold;
+        padding: 1.5rem;
+        background-color: $color-Blue;
+        box-shadow: 0 .5rem 1rem $color;
+        border-radius: 0.8rem;
+        span {
+          color: $color-Grayish-Blue;
+          font-weight: $fw-normal;
+        }
+      }
+      form {
+        background-color: $color-white;
+        padding: 3rem 4rem;
+        border-radius: 0.8rem;
+        box-shadow: 0 .8rem 1rem $color;
+        div {
+          position: relative;
+
+          input {
+            width: 100%;
+            height: 5.5rem;
+            margin-bottom: 1rem;
+            padding: 1.4rem 2.5rem;
+            font-weight: $fw-semibold;
+            border: none;
+            border-radius: 0.4rem;
+            box-shadow: 0 0 1px;
+            vertical-align: center;
+            color: $color-Dark-Blue;
+            &:focus {
+              outline: 0.1rem solid $color-Blue;
+            }
+          }
+          span {
+            display: block;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            font-weight: $fw-normal;
+            color: $color-Red;
+            font-size: 1rem;
+            text-align: right;
+          }
+          img {
+            display: none;
+            position: absolute;
+            right: 2.5rem;
+            top: 1.1rem;
+          }
+        }
+        span {
+          display: block;
+        }
+        button {
+          background-color: $color-Green;
+          color: $color-white;
+          width: 100%;
+          padding: 1.8rem;
+          border: none;
+          border-radius: 0.5rem;
+          font-size: $font-size1;
+          font-weight: $fw-normal;
+          word-spacing: 0.2rem;
+          box-shadow: 0 0.4rem 0.2rem $color-Grayish-Blue;
+        }
+        .t-c {
+          font-weight: $fw-semibold;
+          color: $color-Grayish-Blue;
+          font-size: 1.1rem;
+          text-align: center;
+          display: block;
+          margin-top: 2rem;
+          a {
+            color: $color-Red;
+            text-decoration: none;
+            font-weight: $fw-bold;
+          }
+        }
+      }
+    }
+    .ext {
+      padding-right: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    width: 90% !important;
+  }
+}
+@media (max-width: 876px) {
+  html {
+    font-size: 56.25%;
+  }
+  .container {
+    width: 95% !important;
+  }
+}
+@media (max-width: 665px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    .box {
+      width: 50% !important;
+      h1 {
+        font-size: 3rem !important;
+      }
+      p {
+        font-size: 1.45rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 80% !important;
+    flex-direction: column;
+    text-align: center;
+
+    .box {
+      width: 100% !important;
+      h1 {
+        font-size: 3.5rem !important;
+        margin-bottom: 2rem !important;
+      }
+      p {
+        font-size: 1.9rem !important;
+      }
+      .para {
+        padding: 1.2rem 5.5rem !important;
+      }
+      form {
+        padding: 2.8rem !important;
+        button {
+          font-size: 1.8rem !important ;
+        }
+        .t-c {
+          font-size: 1.2rem !important;
+          a{
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+    .ext {
+      padding-right: 0 !important;
+      margin-bottom: 4.2rem;
+    }
+  }
+}
+
+footer {
+  .attribution {
+    font-size: 1.4rem;
+    text-align: center;
+    a {
+      color: $color-white;
+      font-weight: $fw-normal;
+    }
+  }
+}
